@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="rf.css" />
+</head>
+
+<body>
+  <h2>Student Registration Form Using Table in HTML</h2>
+  <form method="post">
+    <fieldset>
+      <label for="first-name">First Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input
+          id="first-name" name="first-name" type="text" placeholder="Ghanendra" required /></label><label
+        for="first-name">&nbsp;(Max 50 Characters Allowed)</label><br />
+      <label for="last-name">Last Name &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input
+          id="last-name" name="last-name" type="text" placeholder="Yadav" required /></label><label
+        for="last-name">&nbsp;(Max 50 Characters Allowed)</label><br />
+      <label for="email">Email ID &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input
+          id="email" name="email" type="email" placeholder="yghanendra@gmail.com" required /></label><br />
+      <label for="number">Mobile Number &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input id="number" name="number" type="number"
+          placeholder="7842xxxxxx" maxlength="10" required /></label><label>&nbsp; (10 Digits Allowed)</label><br />
+      <label for="gender">Gender &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        &nbsp;</label><label for="male"><input type="radio" value="male" id="male" name="gender"> Male &nbsp; &nbsp;
+      </label><label for="female"><input type="radio" value="female" id="female" name="gender"> Female </label><br />
+      <label>Date of Birth(DOB) &nbsp; &nbsp; </label> <input type="date"><br />
+      <div class="address">
+      <label for="textarea">Address &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+      <textarea id="textarea" rows="10" cols="37"></textarea>
+      </div>
+      <label for="city">City &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input
+        id="city" name="city" type="text" placeholder="Bangalore" required /></label><label
+      for="city">&nbsp;(Max 50 Characters Allowed)</label><br />
+      <label for="pincode">Pin Code &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input
+        id="pincode" name="pincode" type="number" placeholder="560068" required /></label><label
+      for="pincode">&nbsp;(Max 6 Numbers Allowed)</label><br />
+      <label for="state">State &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input
+        id="state" name="state" type="text" placeholder="Karnataka" required /></label><label
+      for="state">&nbsp;(Max 50 Characters Allowed)</label><br />
+      <label for="country">Country &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input
+        id="country" name="country" type="text" placeholder="India" required /></label><br />
+      <div class="hobbies">
+      <label for="ol">Hobbies &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+      <div id="ol">
+        <input type="checkbox" id="hobby1" name="hobby1" value="Dancing">
+        <label for="hobby1">Dancing</label>
+        <input type="checkbox" id="hobby2" name="hobby2" value="Singing">
+        <label for="hobby2">Singing</label>
+        <input type="checkbox" id="hobby3" name="hobby3" value="Drawing">
+        <label for="hobby3">Drawing</label>
+        <input type="checkbox" id="hobby4" name="hobby4" value="Sketching">
+        <label for="hobby4">Sketching</label><br />
+        <input type="checkbox" id="hobby5" name="hobby5" value="Others">
+        <label for="hobby5">Others &nbsp;</label><input type="text" placeholder="Ex-Teaching" width="10px"><br />
+        <label>(Max 50 Characters Allowed)</label>
+      </div>
+      </div>
+      <div id="qualification">
+      <label for="qualify">Qualification &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+      <div id="qualify">
+        <input type="checkbox" id="qualify1" name="qualify1" value="10th">
+        <label for="qualify1">High School(10th)</label>
+          
+      </div>
+      </div>
+
+    </fieldset>
+  </form>
+</body>
+
+</html>
