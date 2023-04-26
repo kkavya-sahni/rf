@@ -36,7 +36,7 @@ body {
 }
 
 .form-field > .fields {
-width: 530px;
+width: 550px;
 }
 
 .form-field > .fields > div {
@@ -73,7 +73,8 @@ input[type='checkbox'] {
   text-align: center;
 }
 
-.form-actions > button {
+.form-actions > input[type="submit"],input[type="reset"] {
+  cursor: pointer;
   height: 32px;
   border: none;
   width: 100px;
