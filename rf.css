@@ -1,70 +1,81 @@
 body {
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-    color: white;
-    font-family: Arial;
-  }
-  
-  h2{
-    margin: 1em auto;
-    text-align: center;
-    color: rgb(0,0,255);
-    font-size: 30px;
-    text-decoration-line: underline ;
-  }
-  
-  form {
-    width: 99vw;
-    text-align: center;
-    display: inline-block;
-    padding-bottom: 2em;
-    font-size: 20px;
-  }
-  fieldset{
-    width: 800px;
-    height: 1300px;
-    border-style: dashed;
-    border-width: 5px;
-    border-color: black;
-    margin:  0 auto;
-    text-align: left;
-    background-image: linear-gradient(180deg,#00B5E2 20% ,#9b7dbf,#ffb2e6); 
-  }
-  
-  label {
-    display: inline-block;
-    margin: 1rem 0;
-  }
-  input[type="submit"] {
-    display: block;
-    width: 60%;
-    margin: 1em auto;
-    height: 2em;
-    font-size: 1.1rem;
-    background-color: #3b3b4f;
-    border-color: white;
-    min-width: 300px;
-  }
-  
-  input[type="file"] {
-    padding: 1px 2px;
-  }
-  
-  a{
-    color: #dfdfe2
-  }
-  input[type="text"],input[type="email"],input[type="number"] {
-    height: 1.5em;
-    padding-left: 10px;
-    width: 300px;
-  }
+  color: #fff;
+  font-family: Verdana;
+  font-weight: bold;
+  font-stretch: expanded;
+}
 
-  .address{
-    display: flex;
-    align-items: center;
-  }
-  .hobbies{
-    display: flex;
-    align-items: center;
-  }
+.form-header {
+  margin: 1em auto;
+  text-align: center;
+  color: #0000FF;
+  font-size: 20px;
+  text-decoration-line: underline;
+}
+
+
+.form-container {
+  margin: 0 auto;
+  width: fit-content;
+  background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);;
+}
+
+.form-content {
+  display: block;
+  border: thin solid black;
+  padding: 0 0 20px 0;
+}
+
+.form-field {
+  display: flex;
+  padding: 20px 15px 0 15px;
+}
+
+.form-field > .label {
+ width: 200px;
+}
+
+.form-field > .fields {
+width: 530px;
+}
+
+.form-field > .fields > div {
+  width: fit-content;
+}
+
+select {
+  height: 30px;
+  width: 70px;
+  border: none;
+}
+
+textarea
+{
+  width: 275px;
+  border: none;
+}
+
+input[type='text'],
+input[type='number'],
+input[type='email']
+{
+width: 270px;
+height: 30px;
+border: none;
+padding-left: 10px;
+}
+
+input[type='checkbox'] {
+  border: none;
+}
+
+.form-actions {
+  text-align: center;
+}
+
+.form-actions > button {
+  height: 32px;
+  border: none;
+  width: 100px;
+  margin: 20px 5px;
+}

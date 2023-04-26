@@ -7,125 +7,262 @@
   </head>
 
   <body>
-    <h2>Student Registration Form Using Table in HTML</h2>
-    <form method="post">
-      <fieldset>
-        <label for="first-name"
-          >First Name
-          <input
-            id="first-name"
-            name="first-name"
-            type="text"
-            placeholder="Ghanendra"
-            required /></label
-        ><label for="first-name">(Max 50 Characters Allowed)</label><br />
-        <label for="last-name"
-          >Last Name
-          <input
-            id="last-name"
-            name="last-name"
-            type="text"
-            placeholder="Yadav"
-            required /></label
-        ><label for="last-name">(Max 50 Characters Allowed)</label><br />
-        <label for="email"
-          >Email ID
-          <input
-            id="email"
-            name="email"
-            type="email"
-            placeholder="yghanendra@gmail.com"
-            required /></label
-        ><br />
-        <label for="number"
-          >Mobile Number
-          <input
-            id="number"
-            name="number"
-            type="number"
-            placeholder="7842xxxxxx"
-            maxlength="10"
-            required /></label
-        ><label> (10 Digits Allowed)</label><br />
-        <label for="gender">Gender </label
-        ><label for="male"
-          ><input type="radio" value="male" id="male" name="gender" />
-          Male </label
-        ><label for="female"
-          ><input type="radio" value="female" id="female" name="gender" />
-          Female </label
-        ><br />
-        <label>Date of Birth(DOB) </label> <input type="date" /><br />
-        <div class="address">
-          <label for="textarea">Address </label>
-          <textarea id="textarea" rows="10" cols="37"></textarea>
-        </div>
-        <label for="city"
-          >City
-          <input
-            id="city"
-            name="city"
-            type="text"
-            placeholder="Bangalore"
-            required /></label
-        ><label for="city">(Max 50 Characters Allowed)</label><br />
-        <label for="pincode"
-          >Pin Code
-          <input
-            id="pincode"
-            name="pincode"
-            type="number"
-            placeholder="560068"
-            required /></label
-        ><label for="pincode">(Max 6 Numbers Allowed)</label><br />
-        <label for="state"
-          >State
-          <input
-            id="state"
-            name="state"
-            type="text"
-            placeholder="Karnataka"
-            required /></label
-        ><label for="state">(Max 50 Characters Allowed)</label><br />
-        <label for="country"
-          >Country
-          <input
-            id="country"
-            name="country"
-            type="text"
-            placeholder="India"
-            required /></label
-        ><br />
-        <div class="hobbies">
-          <label for="ol">Hobbies </label>
-          <div id="ol">
-            <input type="checkbox" id="hobby1" name="hobby1" value="Dancing" />
-            <label for="hobby1">Dancing</label>
-            <input type="checkbox" id="hobby2" name="hobby2" value="Singing" />
-            <label for="hobby2">Singing</label>
-            <input type="checkbox" id="hobby3" name="hobby3" value="Drawing" />
-            <label for="hobby3">Drawing</label>
-            <input
-              type="checkbox"
-              id="hobby4"
-              name="hobby4"
-              value="Sketching"
-            />
-            <label for="hobby4">Sketching</label><br />
-            <input type="checkbox" id="hobby5" name="hobby5" value="Others" />
-            <label for="hobby5">Others </label
-            ><input type="text" placeholder="Ex-Teaching" width="10px" /><br />
-            <label>(Max 50 Characters Allowed)</label>
+    <div>
+      <div class="form-header">
+        <h2>Student Registration Form Using Table in HTML</h2>
+      </div>
+      <div class="form-container">
+        <div class="form-content">
+          <div class="form-field">
+            <div class="label">
+              <span name="first-name">First Name</span>
+            </div>
+            <div class="fields">
+              <div>
+                <input
+                  id="first-name"
+                  name="first-name"
+                  type="text"
+                  placeholder="Ghanendra"
+                  required
+                />
+                <span name="first-name">(Max 50 Characters Allowed)</span>
+              </div>
+            </div>
+          </div>
+          <div class="form-field">
+            <div class="label">
+              <span name="last-name">Last Name</span>
+            </div>
+            <div class="fields">
+              <input
+                id="last-name"
+                name="last-name"
+                type="text"
+                placeholder="Yadav"
+                required
+              />
+              <span name="last-name">(Max 50 Characters Allowed)</span>
+            </div>
+          </div>
+          <div class="form-field">
+            <div class="label">
+              <span name="email">Email ID</span>
+            </div>
+            <div class="fields">
+              <input
+                id="email"
+                name="email"
+                type="email"
+                placeholder="yghanendra@gmail.com"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-field">
+            <div class="label">
+              <span name="mobile-number">Moble Number</span>
+            </div>
+            <div class="fields">
+              <input
+                id="number"
+                name="number"
+                type="number"
+                placeholder="7842xxxxxx"
+                maxlength="10"
+                required
+              />
+              <span>(10 Digits Allowed)</span>
+            </div>
+          </div>
+          <div class="form-field">
+            <div class="label">
+              <span name="gender">Gender</span>
+            </div>
+            <div class="fields">
+              <div>
+                <input type="radio" value="male" id="male" name="gender" />
+                <span name="male">Male</span>
+                <input type="radio" value="female" id="female" name="gender" />
+                <span name="female">Female</span>
+              </div>
+            </div>
+          </div>
+          <div class="form-field">
+            <div class="label">
+              <span name="dob">Date Of Birth(DOB)</span>
+            </div>
+            <div class="fields">
+              <select>
+                <option>Day</option>
+              </select>
+              <select>
+                <option>Month</option>
+              </select>
+              <select>
+                <option>Year</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-field">
+            <div class="label">
+              <span name="address">Address</span>
+            </div>
+            <div class="fields">
+              <textarea id="textarea" rows="10" cols="37"></textarea>
+            </div>
+          </div>
+          <div class="form-field">
+            <div class="label">
+              <span name="city">City</span>
+            </div>
+            <div class="fields">
+              <input
+                id="city"
+                name="city"
+                type="text"
+                placeholder="Bangalore"
+                required
+              />
+              <span name="city">(Max 50 Characters Allowed)</span>
+            </div>
+          </div>
+          <div class="form-field">
+            <div class="label">
+              <span name="pincode">Pin Code</span>
+            </div>
+            <div class="fields">
+              <input
+                id="pincode"
+                name="pincode"
+                type="number"
+                placeholder="560068"
+                required
+              />
+              <span name="pincode">(Max 6 Numbers Allowed)</span>
+            </div>
+          </div>
+          <div class="form-field">
+            <div class="label">
+              <span name="state">State</span>
+            </div>
+            <div class="fields">
+              <input
+                id="state"
+                name="state"
+                type="text"
+                placeholder="Karnataka"
+                required
+              />
+              <span name="state">(Max 50 Characters Allowed)</span>
+            </div>
+          </div>
+          <div class="form-field">
+            <div class="label">
+              <span name="country">Country</span>
+            </div>
+            <div class="fields">
+              <input
+                id="country"
+                name="country"
+                type="text"
+                placeholder="India"
+                required
+              />
+            </div>
+          </div>
+          <div class="form-field">
+            <div class="label">
+              <span name="hobbies">Hobbies</span>
+            </div>
+            <div class="fields">
+              <input type="checkbox" value="Dancing" />
+              <span name="dancing">Dancing</span>
+              <input type="checkbox" value="Singing" />
+              <span name="singing">Singing</span>
+              <input type="checkbox" value="Drawing" />
+              <span name="drawing">Drawing</span>
+              <input type="checkbox" value="Sketching" />
+              <span name="skeching">Sketching</span>
+              <br />
+              <input type="checkbox" value="Others" />
+              <span name="others">Others</span>
+              <input type="text" placeholder="Ex-Teaching" />
+              <span>(Max 50 Characters Allowed)</span>
+            </div>
+          </div>
+          <div class="form-field">
+            <div class="label">
+              <span name="qualifications">Qualification</span>
+            </div>
+            <div class="fields">
+              <div class="qualification-option">
+                <input type="checkbox" value="high-school" />
+                <span name="high-school">High School (10th)</span>
+              </div>
+              <div class="qualification-option">
+                <input type="checkbox" value="higher-school" />
+                <span name="higher-school">High School (12th)</span>
+              </div>
+              <div class="qualification-option">
+                <input type="checkbox" value="graduation" />
+                <span name="graduation">Graduation (Bachelors)</span>
+              </div>
+              <div class="qualification-option">
+                <input type="checkbox" value="post-graduation" />
+                <span name="post-graduation">Post Graduation (Masters)</span>
+              </div>
+              <div class="qualification-option">
+                <input type="checkbox" value="phd" />
+                <span name="phd">PHD</span>
+              </div>
+            </div>
+          </div>
+          <div class="form-field">
+            <div class="label">
+              <span name="courses">Courses Applied For</span>
+            </div>
+            <div class="fields">
+              <div class="course">
+                <input type="radio" value="bca" id="bca" name="course" />
+                <span name="bca">BCA (Bachelor of Computer Applications)</span>
+              </div>
+              <div class="course">
+                <input type="radio" value="bcom" id="bcom" name="course" />
+                <span name="bcom">BCOM (Bachelor of Commerce)</span>
+              </div>
+              <div class="course">
+                <input type="radio" value="bsc" id="bsc" name="course" />
+                <span name="bsc">BSC (Bachelor of Computer Science)</span>
+              </div>
+              <div class="course">
+                <input type="radio" value="ba" id="ba" name="course" />
+                <span name="ba">BA (Bachelor of Arts)</span>
+              </div>
+              <div class="course">
+                <input type="radio" value="mca" id="mca" name="course" />
+                <span name="mca">MCA (Master of Computer Applications)</span>
+              </div>
+              <div class="course">
+                <input type="radio" value="mcom" id="mcom" name="course" />
+                <span name="mcom">MCOM (Master of Commerce)</span>
+              </div>
+              <div class="course">
+                <input type="radio" value="msc" id="msc" name="course" />
+                <span name="msc">MSC (Master of Computer Science)</span>
+              </div>
+              <div class="course">
+                <input type="radio" value="ma" id="ma" name="course" />
+                <span name="ma">MA (Master of Arts)</span>
+              </div>
+            </div>
+          </div>
+          <div class="form-actions">
+            <button>Submit</button>
+            <button>Reset</button>
           </div>
         </div>
-        <div id="qualification">
-          <label for="qualify">Qualification </label>
-          <div id="qualify">
-            <input type="checkbox" id="qualify1" name="qualify1" value="10th" />
-            <label for="qualify1">High School(10th)</label>
-          </div>
-        </div>
-      </fieldset>
-    </form>
+      </div>
+    </div>
   </body>
 </html>
